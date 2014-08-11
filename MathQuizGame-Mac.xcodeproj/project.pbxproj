@@ -11,6 +11,7 @@
 		A44D03CD19985EBC00CD1F42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D03CC19985EBC00CD1F42 /* AppDelegate.swift */; };
 		A44D03CF19985EBC00CD1F42 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A44D03CE19985EBC00CD1F42 /* Images.xcassets */; };
 		A44D03D219985EBD00CD1F42 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A44D03D019985EBD00CD1F42 /* MainMenu.xib */; };
+		A4F4AEBB199881CF001C4416 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F4AEBA199881CF001C4416 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		A44D03CC19985EBC00CD1F42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A44D03CE19985EBC00CD1F42 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A44D03D119985EBD00CD1F42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A4F4AEBA199881CF001C4416 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				A44D03CE19985EBC00CD1F42 /* Images.xcassets */,
 				A44D03D019985EBD00CD1F42 /* MainMenu.xib */,
 				A44D03C819985EBC00CD1F42 /* Supporting Files */,
+				A4F4AEBA199881CF001C4416 /* MainViewController.swift */,
 			);
 			path = "MathQuizGame-Mac";
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4F4AEBB199881CF001C4416 /* MainViewController.swift in Sources */,
 				A44D03CD19985EBC00CD1F42 /* AppDelegate.swift in Sources */,
 				A44D03CB19985EBC00CD1F42 /* main.swift in Sources */,
 			);
@@ -275,6 +279,7 @@
 				A44D03E319985EBD00CD1F42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
