@@ -9,18 +9,23 @@
 import Cocoa
 
 class MainViewController: NSViewController {
-
-    @IBOutlet var output: NSTextView!
-    @IBOutlet var input: NSTextField!
     
-    @IBAction func userDidInput(sender: NSTextField) {
+    func enterText(inputText: String){
         var outputText: String = output.string
-        var inputText: String = input.stringValue
         
         outputText += inputText
         outputText += "\n"
         
         output.string = outputText
+        
+        output.pageDown(self)
+    }
+
+    @IBOutlet var output: NSTextView!
+    @IBOutlet var input: NSTextField!
+    
+    @IBAction func userDidInput(sender: NSTextField) {
+        enterText(sender.stringValue)
     }
     
     override func viewDidLoad() {
