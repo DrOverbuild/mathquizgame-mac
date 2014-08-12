@@ -7,20 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A42BCD9B199AA43E002D1B4E /* DifficultyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42BCD9A199AA43E002D1B4E /* DifficultyLevel.swift */; };
+		A42BCD9D199AA6F9002D1B4E /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42BCD9C199AA6F9002D1B4E /* GameState.swift */; };
 		A44D03CB19985EBC00CD1F42 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D03CA19985EBC00CD1F42 /* main.swift */; };
 		A44D03CD19985EBC00CD1F42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D03CC19985EBC00CD1F42 /* AppDelegate.swift */; };
 		A44D03CF19985EBC00CD1F42 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A44D03CE19985EBC00CD1F42 /* Images.xcassets */; };
 		A44D03D219985EBD00CD1F42 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A44D03D019985EBD00CD1F42 /* MainMenu.xib */; };
+		A4599DF5199A9DBD001A8A65 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4599DF4199A9DBD001A8A65 /* Command.swift */; };
+		A4599DF7199A9F43001A8A65 /* CommandControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4599DF6199A9F43001A8A65 /* CommandControl.swift */; };
 		A4F4AEBB199881CF001C4416 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F4AEBA199881CF001C4416 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A42BCD9A199AA43E002D1B4E /* DifficultyLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DifficultyLevel.swift; sourceTree = "<group>"; };
+		A42BCD9C199AA6F9002D1B4E /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		A44D03C519985EBC00CD1F42 /* MathQuizGame-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MathQuizGame-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A44D03C919985EBC00CD1F42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A44D03CA19985EBC00CD1F42 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A44D03CC19985EBC00CD1F42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A44D03CE19985EBC00CD1F42 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A44D03D119985EBD00CD1F42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A4599DF4199A9DBD001A8A65 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		A4599DF6199A9F43001A8A65 /* CommandControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandControl.swift; sourceTree = "<group>"; };
 		A4F4AEBA199881CF001C4416 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +67,10 @@
 				A44D03D019985EBD00CD1F42 /* MainMenu.xib */,
 				A44D03C819985EBC00CD1F42 /* Supporting Files */,
 				A4F4AEBA199881CF001C4416 /* MainViewController.swift */,
+				A4599DF4199A9DBD001A8A65 /* Command.swift */,
+				A4599DF6199A9F43001A8A65 /* CommandControl.swift */,
+				A42BCD9A199AA43E002D1B4E /* DifficultyLevel.swift */,
+				A42BCD9C199AA6F9002D1B4E /* GameState.swift */,
 			);
 			path = "MathQuizGame-Mac";
 			sourceTree = "<group>";
@@ -141,9 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A42BCD9D199AA6F9002D1B4E /* GameState.swift in Sources */,
 				A4F4AEBB199881CF001C4416 /* MainViewController.swift in Sources */,
 				A44D03CD19985EBC00CD1F42 /* AppDelegate.swift in Sources */,
 				A44D03CB19985EBC00CD1F42 /* main.swift in Sources */,
+				A42BCD9B199AA43E002D1B4E /* DifficultyLevel.swift in Sources */,
+				A4599DF5199A9DBD001A8A65 /* Command.swift in Sources */,
+				A4599DF7199A9F43001A8A65 /* CommandControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

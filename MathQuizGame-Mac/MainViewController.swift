@@ -21,6 +21,8 @@ class MainViewController: NSViewController {
 	let mainFont = NSFont(name: "Courier", size: 12)
 	
 	// Other properties
+	var currentGameState = GameState.DIFFICULTY_CHOOSING_STATE
+	var commandCon: CommandControl!
     
     @IBAction func userDidInput(sender: NSTextField) {
         enterText(sender.stringValue)
@@ -35,6 +37,8 @@ class MainViewController: NSViewController {
         output.font = mainFont
 		input.font = mainFont
 		window.title = NAME
+		
+		commandCon = CommandControl(mvc: self)
 	}
 	
 	func enterText(inputText: String!){
