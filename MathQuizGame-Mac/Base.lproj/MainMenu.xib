@@ -21,6 +21,7 @@
             <connections>
                 <outlet property="input" destination="Ayt-8Y-RcU" id="DBV-Os-ZUu"/>
                 <outlet property="output" destination="HTm-Zz-ggY" id="Pny-qZ-bia"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="cBp-05-NaB"/>
             </connections>
         </viewController>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
@@ -675,25 +676,14 @@
         <window title="MathQuizGame-Mac" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="489" height="351"/>
+            <rect key="contentRect" x="335" y="390" width="489" height="356"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="489" height="351"/>
+                <rect key="frame" x="0.0" y="0.0" width="489" height="356"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ayt-8Y-RcU">
-                        <rect key="frame" x="0.0" y="0.0" width="489" height="22"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="MZN-7z-pkI">
-                            <font key="font" size="12" name="AndaleMono"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                        <connections>
-                            <action selector="userDidInput:" target="PgE-lV-teT" id="YZ3-0t-TuV"/>
-                        </connections>
-                    </textField>
                     <scrollView misplaced="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPx-yW-nr8">
-                        <rect key="frame" x="0.0" y="25" width="489" height="327"/>
+                        <rect key="frame" x="6" y="36" width="477" height="314"/>
                         <clipView key="contentView" misplaced="YES" id="1pS-fo-KEZ">
                             <rect key="frame" x="1" y="1" width="223" height="133"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -702,10 +692,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="223" height="325"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <size key="minSize" width="487" height="325"/>
+                                    <size key="minSize" width="475" height="312"/>
                                     <size key="maxSize" width="489" height="10000000"/>
                                     <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <size key="minSize" width="487" height="325"/>
+                                    <size key="minSize" width="475" height="312"/>
                                     <size key="maxSize" width="489" height="10000000"/>
                                 </textView>
                             </subviews>
@@ -720,18 +710,29 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                     </scrollView>
+                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ayt-8Y-RcU">
+                        <rect key="frame" x="6" y="6" width="477" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="MZN-7z-pkI">
+                            <font key="font" size="12" name="AndaleMono"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="userDidInput:" target="PgE-lV-teT" id="YZ3-0t-TuV"/>
+                        </connections>
+                    </textField>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Ayt-8Y-RcU" firstAttribute="top" secondItem="hPx-yW-nr8" secondAttribute="bottom" constant="3" id="524-UY-Zeh"/>
-                    <constraint firstAttribute="trailing" secondItem="Ayt-8Y-RcU" secondAttribute="trailing" id="Q9W-sd-1lg"/>
-                    <constraint firstItem="hPx-yW-nr8" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="bfB-NX-5IV"/>
-                    <constraint firstItem="Ayt-8Y-RcU" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="ke1-l3-OLK"/>
-                    <constraint firstAttribute="trailing" secondItem="hPx-yW-nr8" secondAttribute="trailing" id="lYa-5g-ABO"/>
-                    <constraint firstItem="hPx-yW-nr8" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="-1" id="mzy-nU-qmb"/>
-                    <constraint firstAttribute="bottom" secondItem="Ayt-8Y-RcU" secondAttribute="bottom" id="w5V-W6-Eie"/>
+                    <constraint firstAttribute="trailing" secondItem="hPx-yW-nr8" secondAttribute="trailing" constant="6" id="P1A-8i-1fY"/>
+                    <constraint firstItem="Ayt-8Y-RcU" firstAttribute="top" secondItem="hPx-yW-nr8" secondAttribute="bottom" constant="8" id="Qi2-kK-KvB"/>
+                    <constraint firstItem="hPx-yW-nr8" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="6" id="Rq6-nV-eG2"/>
+                    <constraint firstAttribute="trailing" secondItem="Ayt-8Y-RcU" secondAttribute="trailing" constant="6" id="V1V-lH-95s"/>
+                    <constraint firstAttribute="bottom" secondItem="Ayt-8Y-RcU" secondAttribute="bottom" constant="6" id="aEa-Dp-QBm"/>
+                    <constraint firstItem="hPx-yW-nr8" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="6" id="cte-yy-rzn"/>
+                    <constraint firstItem="Ayt-8Y-RcU" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="6" id="oE8-cg-qUu"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="302.5" y="326.5"/>
+            <point key="canvasLocation" x="167.5" y="276"/>
         </window>
     </objects>
 </document>
