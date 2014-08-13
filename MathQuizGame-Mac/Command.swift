@@ -30,8 +30,12 @@ class Command{
 		return nil
 	}
 	
+	func name() -> String!{
+		return "Command"
+	}
+	
 	func getGameStateExecutionOfSelfIsAllowedIn() -> [Int]!{
-		return [GameState.DIFFICULTY_CHOOSING_STATE.toRaw(),GameState.GAME_PLAY_STATE.toRaw(),GameState.END_OF_GAME_STATE.toRaw()]
+		return [GameState.ALL_STATES.toRaw()]
 	}
 	
 }

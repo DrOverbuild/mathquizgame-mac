@@ -10,4 +10,8 @@ import Foundation
 
 enum GameState: Int{
 	case DIFFICULTY_CHOOSING_STATE = 0, GAME_PLAY_STATE, END_OF_GAME_STATE
+	
+	// Special state for use in Command.getGameStateExecutionOfSelfIsAllowedIn()
+	// and all methods it overrides.
+	case ALL_STATES = -1
 }

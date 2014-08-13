@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A42BCD9B199AA43E002D1B4E /* DifficultyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42BCD9A199AA43E002D1B4E /* DifficultyLevel.swift */; };
 		A42BCD9D199AA6F9002D1B4E /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42BCD9C199AA6F9002D1B4E /* GameState.swift */; };
+		A42BCDA0199B0D42002D1B4E /* SayCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42BCD9F199B0D42002D1B4E /* SayCommand.swift */; };
 		A44D03CB19985EBC00CD1F42 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D03CA19985EBC00CD1F42 /* main.swift */; };
 		A44D03CD19985EBC00CD1F42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D03CC19985EBC00CD1F42 /* AppDelegate.swift */; };
 		A44D03CF19985EBC00CD1F42 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A44D03CE19985EBC00CD1F42 /* Images.xcassets */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		A42BCD9A199AA43E002D1B4E /* DifficultyLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DifficultyLevel.swift; sourceTree = "<group>"; };
 		A42BCD9C199AA6F9002D1B4E /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		A42BCD9F199B0D42002D1B4E /* SayCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SayCommand.swift; path = Commands/SayCommand.swift; sourceTree = "<group>"; };
 		A44D03C519985EBC00CD1F42 /* MathQuizGame-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MathQuizGame-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A44D03C919985EBC00CD1F42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A44D03CA19985EBC00CD1F42 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A42BCD9E199B0CDD002D1B4E /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				A42BCD9F199B0D42002D1B4E /* SayCommand.swift */,
+			);
+			name = Commands;
+			sourceTree = "<group>";
+		};
 		A44D03BC19985EBC00CD1F42 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +72,7 @@
 		A44D03C719985EBC00CD1F42 /* MathQuizGame-Mac */ = {
 			isa = PBXGroup;
 			children = (
+				A42BCD9E199B0CDD002D1B4E /* Commands */,
 				A44D03CC19985EBC00CD1F42 /* AppDelegate.swift */,
 				A44D03CE19985EBC00CD1F42 /* Images.xcassets */,
 				A44D03D019985EBD00CD1F42 /* MainMenu.xib */,
@@ -160,6 +171,7 @@
 				A42BCD9B199AA43E002D1B4E /* DifficultyLevel.swift in Sources */,
 				A4599DF5199A9DBD001A8A65 /* Command.swift in Sources */,
 				A4599DF7199A9F43001A8A65 /* CommandControl.swift in Sources */,
+				A42BCDA0199B0D42002D1B4E /* SayCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
