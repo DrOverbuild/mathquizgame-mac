@@ -14,10 +14,6 @@ class Command{
 	
 	var vc: MainViewController!
 	
-	func setMVC(mvc:MainViewController!){
-		vc = mvc
-	}
-	
 	func execute(args:[String]?){
 		
 	}
@@ -33,9 +29,13 @@ class Command{
 	func name() -> String!{
 		return "Command"
 	}
-	
-	func getGameStateExecutionOfSelfIsAllowedIn() -> [Int]!{
-		return [GameState.ALL_STATES.toRaw()]
+
+	init(vc: MainViewController){
+		self.vc = vc
 	}
 	
+	func getGameStateExecutionOfSelfIsAllowedIn() -> [Int]! {
+		return [GameState.ALL_STATES.toRaw()]
+	}
+
 }

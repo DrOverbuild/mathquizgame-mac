@@ -32,4 +32,28 @@ class StringUtil {
 	class func substringOf(string: String, startIndex:Int,endIndex:Int) -> String? {
 		return string[startIndex...endIndex]
 	}
+	
+	class func split(string:String!,regex:Character!)->[String]!{
+		var buffer: [String] = []
+		var currentWord = ""
+		
+		for char in string{
+			if(char == regex){
+				buffer.append(currentWord)
+				currentWord = ""
+			}else{
+				currentWord += char
+			}
+		}
+		
+		if buffer.count == 0 {
+			buffer.append(string)
+		}
+		
+		return buffer
+	}
+	
+	class func splitWords(string:String!)->[String]!{
+		return split(string, regex: " ")
+	}
 }

@@ -54,8 +54,8 @@
 		A42BCD9E199B0CDD002D1B4E /* Commands */ = {
 			isa = PBXGroup;
 			children = (
-				A42BCD9F199B0D42002D1B4E /* SayCommand.swift */,
 				A4B8E5AA199BE337000BE0D0 /* ClearCommand.swift */,
+				A42BCD9F199B0D42002D1B4E /* SayCommand.swift */,
 				A4B8E5AC199BE45E000BE0D0 /* SetColorCommand.swift */,
 			);
 			name = Commands;

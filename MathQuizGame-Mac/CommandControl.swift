@@ -11,22 +11,21 @@ import Cocoa
 class CommandControl{
 	
 	var vc: MainViewController!
-	var commands: [Command]!
+	var commands: [Command]! = []
 	
 	init(mvc: MainViewController){
 		vc = mvc
-	}
-	
-	func registerCommand(command:Command!){
-		command.setMVC(vc)
-		commands.append(command)
+		
+		// Register all default commands here:
+		commands.append(ClearCommand(vc: vc))
+		commands.append(SayCommand(vc: vc))
+		commands.append(SetColorCommand(vc: vc))
 	}
 	
 	func parseAndExecuteCommand(txt:String!){
 		var text: String = txt
 		if txt.hasPrefix("/"){
 			var endIndex = countElements(text)-1
-			println("End index is: \(endIndex)")
 			var x = StringUtil.substringOf(text, startIndex: 1, endIndex: endIndex)
 			
 			if let X = x {
@@ -37,7 +36,22 @@ class CommandControl{
 			}
 		}
 		
-		vc.enterText(text)
+		var textSplit = StringUtil.splitWords(text)
+		
+		var commandName = textSplit[0]
+		var commandTyped: Command?
+		
+		for c in commands{
+			if commandName == c.name(){
+				commandTyped = c
+			}
+		}
+		
+		if commandTyped == nil{
+			vc.enterText("\(commandName) is not a valid command.")
+			return
+		}
+		var command = commandTyped!
 	}
 	
 	func parseArgs(txt:String!){
