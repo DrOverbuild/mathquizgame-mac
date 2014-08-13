@@ -25,7 +25,9 @@ class MainViewController: NSViewController {
 	var commandCon: CommandControl!
     
     @IBAction func userDidInput(sender: NSTextField) {
-        enterText(sender.stringValue)
+		if input.stringValue.hasPrefix("/"){
+			commandCon.parseAndExecuteCommand(input.stringValue)
+		}
     }
     
     override func viewDidLoad() {

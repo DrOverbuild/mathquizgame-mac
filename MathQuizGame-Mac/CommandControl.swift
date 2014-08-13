@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 TwoGuysBrickfilms. All rights reserved.
 //
 
-import Foundation
+import Cocoa
 
 class CommandControl{
 	
@@ -15,7 +15,6 @@ class CommandControl{
 	
 	init(mvc: MainViewController){
 		vc = mvc
-		
 	}
 	
 	func registerCommand(command:Command!){
@@ -24,7 +23,21 @@ class CommandControl{
 	}
 	
 	func parseAndExecuteCommand(txt:String!){
-		// TODO: Parse and execute command
+		var text: String = txt
+		if txt.hasPrefix("/"){
+			var endIndex = countElements(text)-2
+			println("End index is: \(endIndex)")
+			var x = StringUtil.substringOf(text, startIndex: 1, endIndex: endIndex)
+			
+			if let X = x {
+				text = X
+				println("Removed initial slash")
+			}else{
+				println("Error removing initial slash.")
+			}
+		}
+		
+		vc.enterText(text)
 	}
 	
 	func parseArgs(txt:String!){

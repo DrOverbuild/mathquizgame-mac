@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6205" systemVersion="14A299l" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6205"/>
     </dependencies>
@@ -677,7 +677,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="489" height="356"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="1024"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="489" height="356"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -692,10 +692,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="223" height="325"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <size key="minSize" width="475" height="312"/>
+                                    <size key="minSize" width="460" height="312"/>
                                     <size key="maxSize" width="489" height="10000000"/>
                                     <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <size key="minSize" width="475" height="312"/>
+                                    <size key="minSize" width="460" height="312"/>
                                     <size key="maxSize" width="489" height="10000000"/>
                                 </textView>
                             </subviews>
@@ -732,7 +732,7 @@
                     <constraint firstItem="Ayt-8Y-RcU" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="6" id="oE8-cg-qUu"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="167.5" y="276"/>
+            <point key="canvasLocation" x="229.5" y="42"/>
         </window>
     </objects>
 </document>
