@@ -25,7 +25,7 @@ class CommandControl{
 	func parseAndExecuteCommand(txt:String!){
 		var text: String = txt
 		if txt.hasPrefix("/"){
-			var endIndex = countElements(text)-2
+			var endIndex = countElements(text)-1
 			println("End index is: \(endIndex)")
 			var x = StringUtil.substringOf(text, startIndex: 1, endIndex: endIndex)
 			
