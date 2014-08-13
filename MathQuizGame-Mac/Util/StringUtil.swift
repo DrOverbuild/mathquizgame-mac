@@ -14,11 +14,11 @@ extension String {
 		println("Number of elements is: \(countElements(self))")
 		println("End index is: \(r.endIndex)")
 		
-		if r.endIndex >= (countElements(self)) || r.endIndex < (0){
+		if r.endIndex > (countElements(self)) || r.endIndex < (0){
 			return nil
 			}
 			
-			if r.startIndex >= (countElements(self)) || r.startIndex < (0){
+			if r.startIndex > (countElements(self)) || r.startIndex < (0){
 				return nil
 			}
 			
