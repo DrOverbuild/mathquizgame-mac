@@ -40,7 +40,7 @@ class Command{
 	
 	func canExecuteInCurrentGameState() -> Bool {
 		let gamestates = getGameStateExecutionOfSelfIsAllowedIn()
-		return find(gamestates,vc.currentGameState.toRaw()) != nil
+		return find(gamestates,vc.currentGameState.toRaw()) != nil || gamestates[0] == GameState.ALL_STATES.toRaw()
 	}
 
 }

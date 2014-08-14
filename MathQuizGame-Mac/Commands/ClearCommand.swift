@@ -22,7 +22,7 @@ class ClearCommand: Command{
         return "/clear to clear output"
     }
     
-    override func getGameStateExecutionOfSelfIsAllowedIn() -> [Int]! {
+    override func getGameStateExecutionOfSelfIsAllowedIn() -> [Int] {
         return [GameState.ALL_STATES.toRaw()]
     }
     

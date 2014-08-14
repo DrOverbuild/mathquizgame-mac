@@ -33,7 +33,7 @@ class SayCommand: Command{
 		return "say"
 	}
 	
-	override func getGameStateExecutionOfSelfIsAllowedIn() -> [Int]! {
+	override func getGameStateExecutionOfSelfIsAllowedIn() -> [Int] {
 		return [GameState.ALL_STATES.toRaw()]
 	}
 	

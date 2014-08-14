@@ -39,7 +39,7 @@ class SetColorCommand: Command{
         return "setcolor"
     }
     
-    override func getGameStateExecutionOfSelfIsAllowedIn() -> [Int]! {
+    override func getGameStateExecutionOfSelfIsAllowedIn() -> [Int] {
         return [GameState.ALL_STATES.toRaw()]
     }
     
