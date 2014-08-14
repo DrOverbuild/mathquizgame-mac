@@ -16,6 +16,7 @@
 		A44D03D219985EBD00CD1F42 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A44D03D019985EBD00CD1F42 /* MainMenu.xib */; };
 		A4599DF5199A9DBD001A8A65 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4599DF4199A9DBD001A8A65 /* Command.swift */; };
 		A4599DF7199A9F43001A8A65 /* CommandControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4599DF6199A9F43001A8A65 /* CommandControl.swift */; };
+		A4940D13199C593500CC2333 /* HelpCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4940D12199C593500CC2333 /* HelpCommand.swift */; };
 		A4A3C57C199BF36D00C9B23C /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3C57B199BF36D00C9B23C /* StringUtil.swift */; };
 		A4B8E5AB199BE337000BE0D0 /* ClearCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B8E5AA199BE337000BE0D0 /* ClearCommand.swift */; };
 		A4F4AEBB199881CF001C4416 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F4AEBA199881CF001C4416 /* MainViewController.swift */; };
@@ -33,6 +34,7 @@
 		A44D03D119985EBD00CD1F42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		A4599DF4199A9DBD001A8A65 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		A4599DF6199A9F43001A8A65 /* CommandControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandControl.swift; sourceTree = "<group>"; };
+		A4940D12199C593500CC2333 /* HelpCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelpCommand.swift; path = Commands/HelpCommand.swift; sourceTree = "<group>"; };
 		A4A3C57B199BF36D00C9B23C /* StringUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringUtil.swift; path = Util/StringUtil.swift; sourceTree = "<group>"; };
 		A4B8E5AA199BE337000BE0D0 /* ClearCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClearCommand.swift; path = Commands/ClearCommand.swift; sourceTree = "<group>"; };
 		A4F4AEBA199881CF001C4416 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			children = (
 				A4B8E5AA199BE337000BE0D0 /* ClearCommand.swift */,
 				A42BCD9F199B0D42002D1B4E /* SayCommand.swift */,
+				A4940D12199C593500CC2333 /* HelpCommand.swift */,
 			);
 			name = Commands;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				A42BCD9B199AA43E002D1B4E /* DifficultyLevel.swift in Sources */,
 				A4599DF5199A9DBD001A8A65 /* Command.swift in Sources */,
 				A4599DF7199A9F43001A8A65 /* CommandControl.swift in Sources */,
+				A4940D13199C593500CC2333 /* HelpCommand.swift in Sources */,
 				A42BCDA0199B0D42002D1B4E /* SayCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

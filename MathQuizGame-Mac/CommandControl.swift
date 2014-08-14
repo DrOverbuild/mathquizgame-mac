@@ -19,6 +19,7 @@ class CommandControl{
 		// Register all default commands here:
 		commands.append(ClearCommand(vc: vc))
 		commands.append(SayCommand(vc: vc))
+		commands.append(HelpCommand(vc: vc))
 	}
 	
 	func parseAndExecuteCommand(txt:String!){
@@ -29,9 +30,7 @@ class CommandControl{
 			
 			if let X = x {
 				text = X
-				println("Removed initial slash")
 			}else{
-				println("Error removing initial slash.")
 			}
 		}
 		
@@ -47,7 +46,7 @@ class CommandControl{
 		}
 		
 		if commandTyped == nil{
-			vc.enterText("\(commandName) is not a valid command.")
+			vc.enterText("\(commandName) is not a valid command. Type /help for help.")
 			return
 		}
 		var command = commandTyped!
