@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 TwoGuysBrickfilms. All rights reserved.
 //
 
-import Foundation
+import Cocoa
 
 // To create an executable command for the app, create a subclass of this class
 // and add an instance of the class in the commands array in class CommandControl.
@@ -34,8 +34,13 @@ class Command{
 		self.vc = vc
 	}
 	
-	func getGameStateExecutionOfSelfIsAllowedIn() -> [Int]! {
+	func getGameStateExecutionOfSelfIsAllowedIn() -> [Int] {
 		return [GameState.ALL_STATES.toRaw()]
+	}
+	
+	func canExecuteInCurrentGameState() -> Bool {
+		let gamestates = getGameStateExecutionOfSelfIsAllowedIn()
+		return find(gamestates,vc.currentGameState.toRaw()) != nil
 	}
 
 }

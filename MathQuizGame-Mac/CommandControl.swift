@@ -52,10 +52,15 @@ class CommandControl{
 			return
 		}
 		var command = commandTyped!
-	}
-	
-	func parseArgs(txt:String!){
-		// TODO: parse args and return an array string of all the args.
+		
+		if !command.canExecuteInCurrentGameState(){
+			vc.enterText("You cannot run that command at this time.")
+			return
+		}
+		
+		textSplit.removeAtIndex(0)
+		
+		command.execute(textSplit)
 	}
 	
 }
