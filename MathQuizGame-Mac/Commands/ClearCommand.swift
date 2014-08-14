@@ -22,10 +22,6 @@ class ClearCommand: Command{
         return "/clear to clear output"
     }
     
-    override func getGameStateExecutionOfSelfIsAllowedIn() -> [Int] {
-        return [GameState.ALL_STATES.toRaw()]
-    }
-    
     override func execute(args: [String]?) {
         vc.output.string = ""
     }
