@@ -27,8 +27,32 @@ class MainViewController: NSViewController {
     @IBAction func userDidInput(sender: NSTextField) {
 		if input.stringValue.hasPrefix("/"){
 			commandCon.parseAndExecuteCommand(input.stringValue)
+			return
+		}
+		switch brain.currentGameState{
+		case GameState.DIFFICULTY_CHOOSING_STATE:
+			runTaskInDifficultyChoosingState()
+		case GameState.GAME_PLAY_STATE:
+			runTaskInGamePlayState()
+		case GameState.END_OF_GAME_STATE:
+			runTaskInEndOfGameState()
+		default:
+			enterText("Error: GameState not set correctly. Starting new game.")
+			brain.returnToDifficultyLevelChoosingGameState()
 		}
     }
+	
+	func runTaskInDifficultyChoosingState(){
+		
+	}
+	
+	func runTaskInGamePlayState(){
+		
+	}
+	
+	func runTaskInEndOfGameState(){
+		
+	}
     
     override func viewDidLoad() {
         super.viewDidLoad()
