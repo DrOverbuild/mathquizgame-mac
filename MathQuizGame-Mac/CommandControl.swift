@@ -18,8 +18,9 @@ class CommandControl{
 		
 		// Register all default commands here:
 		commands.append(ClearCommand(vc: vc))
-		commands.append(SayCommand(vc: vc))
+		commands.append(DifficultyLevelsCommand(vc: vc))
 		commands.append(HelpCommand(vc: vc))
+		commands.append(SayCommand(vc: vc))
 	}
 	
 	func parseAndExecuteCommand(txt:String!){
@@ -40,8 +41,13 @@ class CommandControl{
 		var commandTyped: Command?
 		
 		for c in commands{
-			if commandName == c.name(){
+			if commandName == c.name()  {
 				commandTyped = c
+			}
+			if let alias = c.alias() {
+				if commandName == alias {
+					commandTyped = c
+				}
 			}
 		}
 		

@@ -13,6 +13,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="MathQuizGame_Mac" customModuleProvider="target">
             <connections>
+                <outlet property="vc" destination="PgE-lV-teT" id="3yZ-PL-LGv"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>

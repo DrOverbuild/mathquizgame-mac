@@ -29,6 +29,10 @@ class Command{
 	func name() -> String!{
 		return "Command"
 	}
+	
+	func alias()->String?{
+		return nil
+	}
 
 	init(vc: MainViewController){
 		self.vc = vc
@@ -40,7 +44,10 @@ class Command{
 	
 	func canExecuteInCurrentGameState() -> Bool {
 		let gamestates = getGameStateExecutionOfSelfIsAllowedIn()
-		return find(gamestates,vc.currentGameState.toRaw()) != nil || gamestates[0] == GameState.ALL_STATES.toRaw()
+		let index = find(gamestates,vc.brain.currentGameState.toRaw())
+		let indexIsNotNil = index != nil
+		let gamestatesContainsAllGameStates = find(gamestates,GameState.ALL_STATES.toRaw()) != nil
+		return indexIsNotNil || gamestatesContainsAllGameStates
 	}
 
 }

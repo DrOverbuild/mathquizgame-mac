@@ -21,8 +21,8 @@ class MainViewController: NSViewController {
 	let mainFont = NSFont(name: "Courier", size: 12)
 	
 	// Other properties
-	var currentGameState = GameState.DIFFICULTY_CHOOSING_STATE
 	var commandCon: CommandControl!
+	var brain: MathBrain!
     
     @IBAction func userDidInput(sender: NSTextField) {
 		if input.stringValue.hasPrefix("/"){
@@ -32,6 +32,7 @@ class MainViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+		println("View Loaded!")
         // Do view setup here.
     }
     
@@ -41,6 +42,8 @@ class MainViewController: NSViewController {
 		window.title = NAME
 		
 		commandCon = CommandControl(mvc: self)
+		brain = MathBrain(vc: self)
+		println("Nib awoken!")
 	}
 	
 	func enterText(inputText: String!){

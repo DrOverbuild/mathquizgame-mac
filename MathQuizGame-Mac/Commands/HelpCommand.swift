@@ -11,7 +11,9 @@ import Cocoa
 class HelpCommand: Command{
 	override func execute(args:[String]?){
 		for x in vc.commandCon.commands{
-			vc.enterText("/\(x.name()!): \(x.description()!)")
+			if x.canExecuteInCurrentGameState(){
+				vc.enterText("/\(x.name()!): \(x.description()!)")
+			}
 		}
 	}
 	
@@ -25,5 +27,9 @@ class HelpCommand: Command{
 	
 	override func name() -> String!{
 		return "help"
+	}
+	
+	override func alias() -> String? {
+		return "?"
 	}
 }
