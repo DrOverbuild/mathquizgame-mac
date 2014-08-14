@@ -26,6 +26,14 @@ extension String {
 			var end = advance(startIndex, r.endIndex)
 			return substringWithRange(Range(start: start, end: end))
 	}
+
+subscript (i: Int) -> String? {
+		if i>=countElements(self) || i<0{
+			return nil
+		}
+			
+		return String(Array(self)[i])
+	}
 }
 
 class StringUtil {
