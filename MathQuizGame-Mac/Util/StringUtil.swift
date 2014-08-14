@@ -54,9 +54,7 @@ class StringUtil {
 			}
 		}
 		
-		if buffer.count == 0 {
-			buffer.append(string)
-		}
+		buffer.append(currentWord)
 		
 		return buffer
 	}
