@@ -19,7 +19,6 @@ class CommandControl{
 		// Register all default commands here:
 		commands.append(ClearCommand(vc: vc))
 		commands.append(SayCommand(vc: vc))
-		commands.append(SetColorCommand(vc: vc))
 	}
 	
 	func parseAndExecuteCommand(txt:String!){

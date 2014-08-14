@@ -18,7 +18,6 @@
 		A4599DF7199A9F43001A8A65 /* CommandControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4599DF6199A9F43001A8A65 /* CommandControl.swift */; };
 		A4A3C57C199BF36D00C9B23C /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3C57B199BF36D00C9B23C /* StringUtil.swift */; };
 		A4B8E5AB199BE337000BE0D0 /* ClearCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B8E5AA199BE337000BE0D0 /* ClearCommand.swift */; };
-		A4B8E5AD199BE45E000BE0D0 /* SetColorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B8E5AC199BE45E000BE0D0 /* SetColorCommand.swift */; };
 		A4F4AEBB199881CF001C4416 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F4AEBA199881CF001C4416 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +35,6 @@
 		A4599DF6199A9F43001A8A65 /* CommandControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandControl.swift; sourceTree = "<group>"; };
 		A4A3C57B199BF36D00C9B23C /* StringUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringUtil.swift; path = Util/StringUtil.swift; sourceTree = "<group>"; };
 		A4B8E5AA199BE337000BE0D0 /* ClearCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClearCommand.swift; path = Commands/ClearCommand.swift; sourceTree = "<group>"; };
-		A4B8E5AC199BE45E000BE0D0 /* SetColorCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetColorCommand.swift; path = Commands/SetColorCommand.swift; sourceTree = "<group>"; };
 		A4F4AEBA199881CF001C4416 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +54,6 @@
 			children = (
 				A4B8E5AA199BE337000BE0D0 /* ClearCommand.swift */,
 				A42BCD9F199B0D42002D1B4E /* SayCommand.swift */,
-				A4B8E5AC199BE45E000BE0D0 /* SetColorCommand.swift */,
 			);
 			name = Commands;
 			sourceTree = "<group>";
@@ -182,7 +179,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4A3C57C199BF36D00C9B23C /* StringUtil.swift in Sources */,
-				A4B8E5AD199BE45E000BE0D0 /* SetColorCommand.swift in Sources */,
 				A4B8E5AB199BE337000BE0D0 /* ClearCommand.swift in Sources */,
 				A42BCD9D199AA6F9002D1B4E /* GameState.swift in Sources */,
 				A4F4AEBB199881CF001C4416 /* MainViewController.swift in Sources */,
