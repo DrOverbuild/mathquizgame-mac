@@ -43,7 +43,37 @@ class MainViewController: NSViewController {
     }
 	
 	func runTaskInDifficultyChoosingState(){
-		
+		var selectedMode: String! = input.stringValue
+		if selectedMode.hasPrefix("e"){
+			brain.startGame(DifficultyLevel.ELEMENTARY)
+		}else if selectedMode.hasPrefix("m"){
+			brain.startGame(DifficultyLevel.MIDDLE_SCHOOL)
+		}else if selectedMode.hasPrefix("h"){
+			brain.startGame(DifficultyLevel.HIGH_SCHOOL)
+		}else if selectedMode.hasPrefix("c"){
+			var split = StringUtil.split(input.stringValue, regex: " ")
+			if (split.count>=4){
+				var minRange: Int? = split[1].toInt()
+				var maxRange: Int? = split[2].toInt()
+				var listOfOperations = split[3]
+				var numberOfQuestions: Int? = 0
+				if(split.count >= 5){
+					numberOfQuestions = split[4].toInt()
+				}else{
+					numberOfQuestions = 10
+				}
+				
+				if (minRange != nil && maxRange != nil && numberOfQuestions != nil){
+					brain.startGame(DifficultyLevel.CUSTOM(minRange: minRange!, maxRange: maxRange!, operations: listOfOperations, numberOfQuestions: numberOfQuestions!))
+				}else{
+					enterText("Invalid arguments. To learn more about the custom difficulty, type /difficultylevels.")
+				}
+
+			}else{
+				enterText("Too few arguments. To learn more about the custom difficulty, type /difficultylevels.")
+				return
+			}
+		}
 	}
 	
 	func runTaskInGamePlayState(){

@@ -50,7 +50,7 @@ class StringUtil {
 				buffer.append(currentWord)
 				currentWord = ""
 			}else{
-				currentWord += char
+				currentWord = currentWord.stringByAppendingString("\(char)")
 			}
 		}
 		
